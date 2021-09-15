@@ -1,0 +1,21 @@
+{
+  "name": "qr-casqu",
+  "version": "1.0.0",
+  "description": "QR ticket issue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cape-/qrcasqu.git"
+  },
+  "keywords": [
+    "qr",
+    "ticket",
+    "entry",
+    "pass"
+  ],
+  "author": "Lautaro Capella <laucape@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cape-/qrcasqu/issues"
+  },
+  "homepage": "https://github.com/cape-/qrcasqu#readme"
+}
