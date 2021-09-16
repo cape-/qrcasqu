@@ -11,6 +11,17 @@
     <link href="./libs/bootstrap.min.css" rel="stylesheet">
 
     <style>
+		body {
+			background: url("./fondoLago.jpg") #FEC;
+			background-blend-mode: multiply;
+			background-position-y: 23%;
+			background-size: 100%;
+		}
+
+		.bg-opacity-85 {
+			--bs-bg-opacity: 0.85;
+		}
+		
         .qrcode-container {
             width: 260px;
             height: 260px;
@@ -45,7 +56,7 @@
             <!-- <div class="container col-xl-10 col-xxl-8 px-4 py-5"> -->
             <div class="row g-lg-5 py-5">
                 <div class="col-md-10 mx-auto col-lg-5">
-                    <form class="p-4 border rounded-3 bg-light">
+                    <form class="p-4 border rounded-3 bg-light bg-opacity-85">
                         <div class="row mb-3">
                             <div class="col">
                                 <h1 class="dip-4 play-4 fw-bold lh-1 mb-3">Circo Casqú</h1>
@@ -101,19 +112,23 @@
                             &nbsp;Sept-2021
                         </small><br />
                         <small class="text-muted">
-                            <a href="https://github.com/cape-/qrcasqu" class="link-secondary text-decoration-none"><strong class="">v1.0.0</strong></a>
+                            <a href="https://github.com/cape-/qrcasqu" class="link-secondary text-decoration-none"><strong class="">v1.0.1</strong></a>
                         </small>
                     </form>
                 </div>
                 <div class="col-lg-7 text-center text-lg-start">
-                    <h2 class="dip-4 play-4 fw-bold lh-1 mb-3">QR de ingreso</h2>
-                    <small class="col-lg-10 fs-4">
-                      1. Clic derecho sobre el QR > "Copiar Imagen"<br/>
-                      2. Ingresá Teléfono y clic en "Ir a WhatsApp"<br/>
-                      3. Pegá el QR en el chat con <code>Ctrl+V</code>
-                    </small>
-                    <div id="qrcodeContainer" class="mb-3 mt-3 qrcode-container"></div>
-                    <form class="p-3 border rounded-3 bg-light">
+                    <div class="p-4 border rounded-3 bg-light bg-opacity-85 mb-4">
+	                    <div>
+				            <h2 class="dip-4 play-4 fw-bold lh-1 mb-3">QR de ingreso</h2>
+				            <small class="col-lg-10 fs-4">
+				              1. Clic derecho sobre el QR > "Copiar Imagen"<br/>
+				              2. Ingresá Teléfono y clic en "Ir a WhatsApp"<br/>
+				              3. Pegá el QR en el chat con <code>Ctrl+V</code>
+				            </small>
+			            </div>
+		                <div id="qrcodeContainer" class="mt-3 qrcode-container"></div>
+		            </div>
+                    <form class="p-4 border rounded-3 bg-light bg-opacity-85">
                         <!-- <button class="btn btn-lg w-100 btn-primary mb-3" type="button" onclick="copyQRtoClipboard()">Copiar QR</button> TODO: Implementar -->
                         <div class="input-group">
                             <label class="input-group-text" for="inputGroupSelect01">+54 9</label>
